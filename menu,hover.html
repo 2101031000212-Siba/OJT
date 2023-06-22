@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>CSS Hover Element - Selector OR Child Combinator</title>
+    <style type="text/CSS">
+    #mainUL li ul li {display:none;}
+    #mainUL li:hover ul li {display:block;}
+    #mainUL li:hover ul li ul li {display:none;}
+    #mainUL li ul li:hover ul li{display:block;}
+    #mainUL li ul li:hover ul li ul li {display:none;}
+    #mainUL li ul li ul li:hover ul li {display:block;} 
+
+</style>
+</head>
+
+<body>
+
+    <ul id="mainUL">
+        <li>google
+
+            <ul>
+
+                <li>gmail
+                    <ul>
+                        <li>sign out</li>
+                        <li>sign in
+                            <ul>
+                                <li>sign in as admin</li>
+                                <li>sign in as student</li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li>facebook</li>
+        <li>microsoft</li>
+        <li>youtube</li>
+    </ul>
+
+
+
+
+
+</body>
+
+</html>
